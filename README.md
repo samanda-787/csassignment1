@@ -18,7 +18,7 @@ Download from [Apache Friends](https://www.apachefriends.org/) and install with:
 3. Open phpMyAdmin (`http://localhost/phpmyadmin`)
 4. Create database: `student_api`
 
-### 3. Install Laravel Project
+### 3. Installation
 ```bash
 # Move project to XAMPP's htdocs
 cd C:\xampp\htdocs
