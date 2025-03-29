@@ -4,8 +4,8 @@
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 ## API Endpoints
-- `https://ec2-44-210-127-201.compute-1.amazonaws.com/students` - Student list (name + program)
-- `https://ec2-44-210-127-201.compute-1.amazonaws.com/subjects` - Software Engineering curriculum by year
+- `http://ec2-16-170-236-138.eu-north-1.compute.amazonaws.com/students` - Student list (name + program)
+- `http://ec2-16-170-236-138.eu-north-1.compute.amazonaws.com/subjects` - Software Engineering curriculum by year
 
 ## XAMPP Setup Guide
 
