@@ -27,7 +27,7 @@ Download from [Apache Friends](https://www.apachefriends.org/) and install with:
 
 
 
-                   # ASSIGNMENT 1
+# ASSIGNMENT 2
 
 ##  Bash Scripts for AWS Ubuntu Server Management
 
