@@ -6,7 +6,7 @@
 ## API Endpoints
 - `http://ec2-16-170-217-124.eu-north-1.compute.amazonaws.com/subjects` - Student list (name + program)
 - 
-- `http://ec2-16-170-217-124.eu-north-1.compute.amazonaws.com/subjects` - Software Engineering curriculum by year
+- `http://ec2-16-170-217-124.eu-north-1.compute.amazonaws.com/students` - Software Engineering curriculum by year
 
 ## XAMPP Setup Guide
 
