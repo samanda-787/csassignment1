@@ -1,3 +1,5 @@
+
+# ASSIGNMENT 1
 # Student Management API 
 
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
@@ -25,13 +27,13 @@ Download from [Apache Friends](https://www.apachefriends.org/) and install with:
 
 
 
-                    # 📘 ASSIGNMENT 2
+                   # ASSIGNMENT 1
 
-## 🔧 Bash Scripts for AWS Ubuntu Server Management
+##  Bash Scripts for AWS Ubuntu Server Management
 
----
 
-## 🔄 BACKUP SCHEMES
+
+##  BACKUP SCHEMES
 
 ### 1. Full Backup
 **Execution**: Copies all files and databases every time the backup runs.
@@ -44,7 +46,7 @@ Download from [Apache Friends](https://www.apachefriends.org/) and install with:
 - Time-consuming and resource-intensive.
 - Requires significant storage space.
 
----
+
 
 ### 2. Incremental Backup
 **Execution**: Backs up only files changed since the last incremental backup.
@@ -57,7 +59,7 @@ Download from [Apache Friends](https://www.apachefriends.org/) and install with:
 - Slower to restore (requires all incremental sets + full backup).
 - Slightly more complex to manage.
 
----
+
 
 ### 3. Differential Backup
 **Execution**: Backs up files changed since the last full backup.
@@ -70,9 +72,9 @@ Download from [Apache Friends](https://www.apachefriends.org/) and install with:
 - More storage than incremental.
 - Grows larger until next full backup.
 
----
 
-## 🎯 PURPOSE OF EACH SCRIPT
+
+##  PURPOSE OF EACH SCRIPT
 
 ### `health_check.sh`
 - **Purpose**: Monitor system resource usage and API endpoint availability.
@@ -83,11 +85,11 @@ Download from [Apache Friends](https://www.apachefriends.org/) and install with:
 ### `update_server.sh`
 - **Purpose**: Automate system and API code updates from GitHub.
 
----
 
-## ⚙️ HOW TO SET UP AND RUN THE SCRIPTS
 
-### 📤 Upload Scripts to Your Server
+##  HOW TO SET UP AND RUN THE SCRIPTS
+
+### Upload Scripts to Your Server
 
 
 
@@ -101,17 +103,26 @@ chmod +x update_server.sh
 ./backup_api.sh
 ./update_server.sh
 
-###Schedule with Cron
+Schedule with Cron
+
 crontab -e
 
 0 */6 * * * /home/ubuntu/bash_scripts/health_check.sh
+
 0 2 * * * /home/ubuntu/bash_scripts/backup_api.sh
+
 0 3 */3 * * /home/ubuntu/bash_scripts/update_server.sh
 
 **DEPENDENCIES**
+
 Ensure the following tools are installed:
+
 curl – for checking API endpoints
+
 tar – for archiving files
+
 mysqldump or pg_dump – for database export (MySQL/PostgreSQL)
+
 git – to pull updates from your GitHub repository
+
 Web server – Apache or Nginx (depending on what your API uses)
