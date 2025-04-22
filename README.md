@@ -22,11 +22,7 @@ Download from [Apache Friends](https://www.apachefriends.org/) and install with:
 3. Open phpMyAdmin (`http://localhost/phpmyadmin`)
 4. Create database: `student_api`
 
-### 3. Installation
-```bash
-# Move project to XAMPP's htdocs
-cd C:\xampp\htdocs
-git clone https://github.com/samanda-787/csassignment1.git
+
 
 
                     # 📘 ASSIGNMENT 2
@@ -93,6 +89,29 @@ git clone https://github.com/samanda-787/csassignment1.git
 
 ### 📤 Upload Scripts to Your Server
 
-```bash
-scp health_check.sh backup_api.sh update_server.sh ubuntu@<your-server-ip>:~/bash_scripts/
 
+
+### Set Execute Permissions
+chmod +x health_check.sh
+chmod +x backup_api.sh
+chmod +x update_server.sh
+
+### Run a Script Manually
+./health_check.sh
+./backup_api.sh
+./update_server.sh
+
+###Schedule with Cron
+crontab -e
+
+0 */6 * * * /home/ubuntu/bash_scripts/health_check.sh
+0 2 * * * /home/ubuntu/bash_scripts/backup_api.sh
+0 3 */3 * * /home/ubuntu/bash_scripts/update_server.sh
+
+**DEPENDENCIES**
+Ensure the following tools are installed:
+curl – for checking API endpoints
+tar – for archiving files
+mysqldump or pg_dump – for database export (MySQL/PostgreSQL)
+git – to pull updates from your GitHub repository
+Web server – Apache or Nginx (depending on what your API uses)
