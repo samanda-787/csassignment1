@@ -134,7 +134,7 @@ Web server – Apache or Nginx (depending on what your API uses)
 
 # ASSIGNMENT 3
 
-###Docker and Docker Compose
+
 
 # Dockerization and Deployment Guide
 
@@ -145,7 +145,8 @@ Web server – Apache or Nginx (depending on what your API uses)
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
 
-   ###Build the Docker image:
+   Build the Docker image:
+   
    docker-compose build
 
    ###Verify the build(Confirm that your Laravel application image and database image are listed.)
