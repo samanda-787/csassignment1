@@ -149,27 +149,27 @@ Web server – Apache or Nginx (depending on what your API uses)
    
    docker-compose build
 
-   ###Verify the build(Confirm that your Laravel application image and database image are listed.)
+   Verify the build(Confirm that your Laravel application image and database image are listed.)
+
    docker images
 
    ***Deploying and Managing Containers with Docker Compose***
 
    ### Run the containers:
+   
    docker-compose up
 
-   ###Stop the containers:
+   Stop the containers:
+   
    docker-compose down
 
-   ###View running containers:
+   View running containers:
+   
    docker ps
 
-   ##Rebuild containers after updates:
+   Rebuild containers after updates:
+   
    docker-compose up --build
 
-   ###Troubleshooting Tips
-   Issue	Solution
-Database connection error	Ensure DB_HOST is correctly set to db in .env and docker-compose.yml.
-Port already in use	Change exposed ports in docker-compose.yml (e.g., 8000:8000 to 8001:8000).
-Migration or seed failures	Run manually: docker-compose exec app php artisan migrate or php artisan db:seed.
-File permission errors	Fix ownership: sudo chown -R $USER:$USER your-project-folder.
-Containers failing to start	Check detailed logs using docker-compose logs and fix any misconfigurations.
+   Troubleshooting Tips
+   
