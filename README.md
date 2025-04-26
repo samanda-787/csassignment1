@@ -171,5 +171,19 @@ Web server – Apache or Nginx (depending on what your API uses)
    
    docker-compose up --build
 
-   Troubleshooting Tips
+  ## Troubleshooting Tips
+
+- **Database connection error:**  
+  Make sure `DB_HOST` is correctly set to `db` in your `.env` file and in `docker-compose.yml`.  
+  Also, ensure that the database service is running.
+
+- **Port already in use:**  
+  If you get a "port already in use" error, modify the exposed ports in `docker-compose.yml`.  
+  Example: change `8000:8000` to `8001:8000`.
+
+- **Migration or seeding failures:**  
+  If migrations fail, run them manually inside the app container:  
+  ```bash
+  docker-compose exec app php artisan migrate
+
    
