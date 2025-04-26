@@ -20,24 +20,8 @@
 ### 2. Configure Laravel to Use SQLite
 
 1. In your project root, create a new SQLite database file:
-   ```bash
+
    touch database/database.sqlite
-
-## XAMPP Setup Guide
-
-### 1. Install XAMPP
-Download from [Apache Friends](https://www.apachefriends.org/) and install with:
-- Apache
-- MySQL
-- PHP 8.0+
-
-### 2. Configure MySQL
-1. Launch XAMPP Control Panel
-2. Start Apache and MySQL
-3. Open phpMyAdmin (`http://localhost/phpmyadmin`)
-4. Create database: `student_api`
-
-
 
 
 
