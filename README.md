@@ -10,6 +10,19 @@
  
 - http://ec2-16-170-217-124.eu-north-1.compute.amazonaws.com/students - Software Engineering curriculum by year
 
+
+## Laravel Setup Guide (Using SQLite)
+
+### 1. Install XAMPP (Optional for Apache & PHP)
+- Download from [Apache Friends](https://www.apachefriends.org/) if you don't already have PHP installed.
+- Only Apache and PHP are needed — **MySQL is NOT required** for SQLite setup.
+
+### 2. Configure Laravel to Use SQLite
+
+1. In your project root, create a new SQLite database file:
+   ```bash
+   touch database/database.sqlite
+
 ## XAMPP Setup Guide
 
 ### 1. Install XAMPP
