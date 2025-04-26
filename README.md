@@ -141,10 +141,6 @@ Web server – Apache or Nginx (depending on what your API uses)
 ## Building Docker Images
 
 1. **Clone the repository**:
-   
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
-
    Build the Docker image:
    
    docker-compose build
